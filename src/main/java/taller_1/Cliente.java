@@ -60,7 +60,7 @@ public class Cliente {
 		this.ciudad = ciudad;
 	}
 
-	public Cliente(Sting nombre, String apellido, String correo, String telefono, String estCivil, String ciudad) {
+	public Cliente(String nombre, String apellido, String correo, String telefono, String estCivil, String ciudad) {
 		throw new UnsupportedOperationException();
 	}
 }

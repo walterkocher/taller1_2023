@@ -20,15 +20,30 @@ public class Tienda {
 	}
 
 	public Dispositivo buscarDispMarca(String marca) {
-		throw new UnsupportedOperationException();
+		for(Dispositivo dispositivo1: this.dispositivo) {
+			if (dispositivo1.getMarca().equals(marca)) {
+				return dispositivo1;
+			}
+		}
+		return null;
 	}
 
 	public Dispositivo buscarDispModelo(String modelo) {
-		throw new UnsupportedOperationException();
+		for(Dispositivo dispositivo1: this.dispositivo) {
+			if (dispositivo1.getModelo().equals(modelo)) {
+				return dispositivo1;
+			}
+		}
+		return null;
 	}
 
 	public Dispositivo buscarDispTipo(String tipo) {
-		throw new UnsupportedOperationException();
+		for(Dispositivo dispositivo1: this.dispositivo) {
+			if (dispositivo1.getTipo().equals(tipo)) {
+				return dispositivo1;
+			}
+		}
+		return null;
 	}
 
 	public void realizarCompra(Compra compra) {
