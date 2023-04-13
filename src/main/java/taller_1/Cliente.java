@@ -61,6 +61,11 @@ public class Cliente {
 	}
 
 	public Cliente(String nombre, String apellido, String correo, String telefono, String estCivil, String ciudad) {
-		throw new UnsupportedOperationException();
+		this.nombre=nombre;
+		this.apellido=apellido;
+		this.correo=correo;
+		this.telefono=telefono;
+		this.estCivil=estCivil;
+		this.ciudad=ciudad;
 	}
 }
