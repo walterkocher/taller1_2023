@@ -47,6 +47,15 @@ public class Tienda {
 	}
 
 	public void realizarCompra(Compra compra) {
-		throw new UnsupportedOperationException();
+
+
+	}
+	public Cliente agregarClientes(Cliente cliente) {
+		for(Cliente cliente1: this.clientes) {
+			if (cliente1.getNombre().equals(cliente.getNombre()) && cliente1.getApellido().equals(cliente.getApellido())) {
+				clientes.add(cliente);
+			}
+		}
+		return null;
 	}
 }
